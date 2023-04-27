@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="adn.css">
+    <title>Adivinhando o número</title>
+  </head>
+
+  <body>
+    <h1>ADIVINHE O NÚMERO</h1>
+
+    <p>Nós selecionamos um número entre 1 e 100. Você tem 10 tentativas. Nós lhe diremos se está perto ou longe.</p>
+
+    <div class="form">
+      <label for="digitePalpite">Qual seu palpite?</label>
+      <input type="number" min="1" max="100" required id="campoPalpite" class="campoPalpite">
+      <input type="submit" value="Enviar palpite" class="envioPalpite">
+    </div>
+
+    <div class="resultParas">
+      <p class="palpites"></p>
+      <p class="ultimoResultado"></p>
+      <p class="altoOuBaixo"></p>
+    </div>
+
+  <script src="adn.js"></script>
+  
+  </body>
+</html>
